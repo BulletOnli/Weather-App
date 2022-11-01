@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="searchContainer">
+            <form class="searchBar" onsubmit="return false">
+                <input id="input" type="text" placeholder="Search City" autocomplete="off">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="cityContainer">
+            <p class="city">Manila</p>
+            <p class="country">PH</p>
+        </div>
+        <div class="tempContainer">
+            <p class="celsius">25°C</p>
+            <p class="fahren">22°F</p>
+        </div>
+        
+        <div class="gridContainer">
+            <div class="box1">
+                <span><p>Feels Like:</p></span>
+                <div class="value">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <p class="feels">25°F</p>
+                </div>
+            </div>
+            <div class="box2">
+                <span><p>Humidity:</p></span>
+                <div class="value">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <p class="humidity">50%</p>
+                </div>
+            </div>
+            <div class="box3">
+                <span><p>Wind:</p></span>
+                <div class="value">
+                    <i class="fa-solid fa-wind"></i>
+                    <p class="wind">200 km/h</p>
+                </div>
+            </div>
+            <div class="box4">
+                <span><p>Pressure:</p></span>
+                <div class="value">
+                    <!-- <i class="fa-solid fa-wind"></i> -->
+                    <p class="pressure">1000 hPa</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/BulletOnli" target="_blank""><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

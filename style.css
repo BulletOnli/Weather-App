@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Open+Sans:wght@400;500;600;700;800&family=Shrikhand&family=Silkscreen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    width: 30rem;
+    height: 45rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+.searchContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.searchBar {
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+
+.searchBar input {
+    font-size: 1.3rem;
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+::placeholder {
+    color: black;
+    opacity: 70%;
+}
+
+.searchBar button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.searchBar button i{
+    font-size: 1.4rem;
+}
+
+.cityContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cityContainer .city {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.cityContainer .country {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 8px;
+    padding-bottom: 50px;
+}
+
+.tempContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.tempContainer .celsius {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.tempContainer .fahren {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.gridContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.gridContainer span p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.gridContainer p {
+    font-size: 25px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+}
+
+.value i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.footer a {
+    color: black;
+    font-size: 20px;
+}
