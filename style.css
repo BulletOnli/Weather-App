@@ -22,7 +22,7 @@ body {
 
 .main {
     width: 30rem;
-    height: 45rem;
+    height: 38rem;
     border-radius: 20px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
 }
@@ -79,7 +79,7 @@ body {
 }
 
 .cityContainer .city {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -114,7 +114,6 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
     justify-items: center;
     margin-top: 3rem;
 }
@@ -129,14 +128,15 @@ body {
 }
 
 .box1,
-.box2,
-.box3,
-.box4 {
-    width: 100%;
+.box2 {
+    width: 12rem;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
 }
 
 .value {
@@ -146,7 +146,7 @@ body {
 
 .value i {
     font-size: 25px;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 .footer {
