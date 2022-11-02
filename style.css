@@ -160,3 +160,33 @@ body {
     color: black;
     font-size: 20px;
 }
+
+@media (max-width: 500px) {
+    .main {
+        width: 26rem;
+    }
+    .box1,
+    .box2 {
+        width: 11rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .main {
+        width: 22rem;
+    }
+    .box1,
+    .box2 {
+        width: 9.5rem;
+    }
+    .gridContainer span p {
+        font-size: 25px;
+    }
+    .gridContainer p {
+        font-size: 20px;
+    }
+    .searchBar {
+        width: 20rem;
+    }
+}
