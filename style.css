@@ -25,7 +25,21 @@ body {
     height: 38rem;
     border-radius: 20px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
 }
+
+.cloud3 {
+    position: absolute;
+    top: 75px;
+    left: -50px;
+}
+
+.cloud3 img {
+    width: 2.5rem;
+    opacity: 60%;
+}
+
 
 .searchContainer {
     width: 100%;
@@ -96,13 +110,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin-top: 1.5rem;
 }
 
 .tempContainer .celsius {
     font-size: 5rem;
     font-weight: bolder;
+    animation: transitions 0.75s;
+}
+
+@keyframes transitions {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .tempContainer .fahren {
@@ -190,3 +213,26 @@ body {
         width: 20rem;
     }
 }
+
+.loader {
+    width: 60px;
+    height: 60px;
+   }
+   
+   .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top: 2px solid #8900FF;
+    border-right: 2px solid transparent;
+    animation: spinner8217 0.8s linear infinite;
+   }
+   
+   @keyframes spinner8217 {
+    to {
+     transform: rotate(360deg);
+    }
+   }

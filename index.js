@@ -1,6 +1,6 @@
-checkWeather('Manila') // Default weather
-
 const input = document.getElementById('input')
+
+checkWeather('Manila') // Default Weather
 
 document.getElementById('search').addEventListener('click', () => {
     checkWeather(input.value)
@@ -18,11 +18,10 @@ async function checkWeather(e) {
         const wind = data.wind.speed
         const cityName = data.name
         const country = data.sys.country
-
         const getCelsius = Math.ceil(temp - 273.15)
-        const getFahren = Math.ceil((data.main.temp - 273.15) * (9/5) + 32)
-        
-        document.querySelector('.city').textContent = `${cityName}`
+        const getFahren = Math.ceil((temp - 273.15) * (9/5) + 32)
+
+        document.querySelector('.city').textContent = cityName
         document.querySelector('.country').textContent = country
         document.querySelector('.celsius').textContent = `${getCelsius}°C`
         document.querySelector('.fahren').textContent = `${getFahren}°F`
@@ -37,5 +36,22 @@ async function checkWeather(e) {
         document.querySelector('.fahren').textContent = ''
 
         document.querySelector('.gridContainer').style.display = 'none'
+    }
+}
+
+// cloud animation
+animate()
+function animate() {
+    let x = -50
+    let timer;
+
+    timer = setInterval(move, 15)
+
+    function move() {
+        if (x <= 480) {
+            x++
+            if (x == 480) {x = -50}
+            document.querySelector('.cloud3').style.left = `${x}px`
+        }
     }
 }
